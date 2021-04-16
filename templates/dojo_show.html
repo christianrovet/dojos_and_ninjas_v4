@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Show</title>
+</head>
+<body>
+    <h1>{{ninjas_dojos[0]['name']}} Ninjas</h1>
+    {% for i in ninjas_dojos %}
+        <p>First Name :{{i['first_name']}}</p>
+        <p>Last Name : {{i['last_name']}}</p>
+        <p>Age : {{i['age']}}</p>
+    {% endfor %}
+    <a href="/dojo">Home</a>
+</body>
+</html>
